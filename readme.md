@@ -26,6 +26,12 @@ Husky can prevent bad git commit, git push and more 🐶 woof!
 npm install husky --save-dev
 ```
 
+If the hooks do not run, remove the hooks from git and reinstall the husky
+
+```shell
+rm -rf .git/hooks
+```
+
 ## striker
 
 Test your tests with mutation testing.
