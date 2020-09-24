@@ -1,9 +1,17 @@
 import { Calculator, Equation } from './calculator';
+import { Severity } from "jest-allure/dist/Reporter";
+
+declare const reporter: any;
 
 const calculator = new Calculator();
 
+
 describe('calculator', () => {
   it('addition', () => {
+    reporter
+      .description("Short description about testing an addition")
+      .severity(Severity.Trivial)
+      .testId("TEST-01");
     calculator.valueA = 6;
     calculator.valueB = 2;
     const result = calculator.result(Equation.Addition);

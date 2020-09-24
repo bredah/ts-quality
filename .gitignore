@@ -116,3 +116,4 @@ dist
 .stryker-tmp
 
 reports
+allure-results
